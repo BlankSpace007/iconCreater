@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{ Create icon for iOS.}
   spec.description   = %q{ Create every measurement icon for iOS.}
-  spec.homepage      = "https://github.com/BlankSpace007"
+  spec.homepage      = "https://github.com/BlankSpace007/iconCreater.git"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
