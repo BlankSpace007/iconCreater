@@ -6,12 +6,12 @@ require 'iconCreater/version'
 Gem::Specification.new do |spec|
   spec.name          = "iconCreater"
   spec.version       = IconCreater::VERSION
-  spec.authors       = ["lixipeng"]
-  spec.email         = ["lixipeng@21tb.com"]
+  spec.authors       = ["hoping_sir"]
+  spec.email         = ["1059710422@qq.com"]
 
   spec.summary       = %q{ Create icon for iOS.}
   spec.description   = %q{ Create every measurement icon for iOS.}
-  spec.homepage      = "https://github.com/BlankSpace007/iconCreater.git"
+  spec.homepage      = "https://github.com/BlankSpace007/iconCreater"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -22,9 +22,11 @@ Gem::Specification.new do |spec|
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
 
+
+
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.bindir        = "bin"
+  spec.executables   << 'iconCreater'
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.10"

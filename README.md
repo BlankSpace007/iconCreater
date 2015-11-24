@@ -1,28 +1,48 @@
 # IconCreater
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/iconCreater`. To experiment with that code, run `bin/console` for an interactive prompt.
+A command-line tool for creating all icons  of iOS App.
 
-TODO: Delete this and the text above, and describe your gem
 
-## Installation
+## 安装
 
-Add this line to your application's Gemfile:
+First this is require Ruby envirement(Mac OSX)
 
+Before downlown the gem ,wo need some prepare:
+
+```sh
+  brew install imagemagick
+```
+Then install this gem
 ```ruby
-gem 'iconCreater'
+  gem install iconCreater
+```
+**注意: 如果你的系统是 Mac OS X 10.11 以后的版本, 由于10.11引入了 `rootless`, 无法直接安装 iconCreater, 有以下三种解决办法:**
+
+1\. 使用 [RVM](https://rvm.io/) 安装 Ruby, 再安装 iconCreater(推荐)
+
+```sh
+# Install RVM:
+$ \curl -sSL https://get.rvm.io | bash -s stable --ruby
+
+$ gem install iconCreater
 ```
 
-And then execute:
+2\. 指定 iconCreater 中 bin 文件的 PATH
 
-    $ bundle
+```sh
+$ export PATH=/usr/local/bin:$PATH;gem install -n /usr/local/bin iconCreater
+```
 
-Or install it yourself as:
+3\. 重写 Ruby Gem 的 bindir
 
-    $ gem install iconCreater
+```sh
+$ echo 'gem: --bindir /usr/local/bin' >> ~/.gemrc
+$ gem install fir-cli
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+
 
 ## Development
 
