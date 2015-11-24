@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'iconCreater'
+
+IconCreater::Run.new.run
