@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["1059710422@qq.com"]
 
   spec.summary       = %q{ Create icon for iOS.}
-  spec.description   = %q{ Create every measurement icon for iOS.}
+  spec.description   = %q{ Create all measurement icon for iOS.}
   spec.homepage      = "https://github.com/BlankSpace007/iconCreater"
   spec.license       = "MIT"
 
@@ -26,9 +26,11 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "bin"
-  spec.executables   << 'iconCreater'
+  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
+
+
 end

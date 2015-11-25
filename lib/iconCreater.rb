@@ -6,12 +6,8 @@ require 'iconCreater/parser'
 module IconCreater
 
   class Run
-
     def run
-
       inp =  Parser.new.parse
-
-
       creat = Create.new({"Icon57.png" => 57,
                           "Icon57@2x.png"=> 114,
                           "Icon-60.png"=> 60,
@@ -31,10 +27,5 @@ module IconCreater
                           "Icon-29@3x.png"=> 87});
       creat.createicon(inp.iconPath,inp.outputPath)
     end
-
   end
-
-
-
-
 end

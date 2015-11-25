@@ -9,7 +9,7 @@ module IconCreater
       inp = Input.new;
 
       OptionParser.new do |opts|
-        opts.banner = "Usage: "
+        opts.banner = "Usage: iconCreater [intrerval]  [arguments...]"
 
         opts.on("-i", "--icon ICON", "Set The Path of Icon") do |i|
           inp.iconPath = i;
@@ -22,7 +22,7 @@ module IconCreater
           exit 0
         end
         opts.on("-h", "--help", "Print the help") do
-
+          puts opts
           exit 0
         end
       end.parse!
