@@ -28,4 +28,7 @@ module IconCreater
       creat.createicon(inp.iconPath,inp.outputPath)
     end
   end
+
+
+
 end
