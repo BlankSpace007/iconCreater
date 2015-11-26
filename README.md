@@ -25,7 +25,7 @@ $ export PATH=/usr/local/bin:$PATH;gem install -n /usr/local/bin iconCreater
 
 ```sh
 $ echo 'gem: --bindir /usr/local/bin' >> ~/.gemrc
-$ gem install fir-cli
+$ gem install iconCreater
 ```
 
 ## Usage
