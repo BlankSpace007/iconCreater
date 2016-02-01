@@ -10,7 +10,7 @@ You need install ImageMagick
 
 Then install this gem
 ```ruby
-  gem install iconCreater
+  sudo gem install iconCreater
 ```
 **注意: 如果你的系统是 Mac OS X 10.11 以后的版本, 由于10.11引入了 `rootless`, 无法直接安装 iconCreater, 有以下两种解决办法:**
 
